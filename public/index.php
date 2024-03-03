@@ -9,8 +9,9 @@
 </head>
 
 <body>
-
-
+    
+<!-- Headlines -->
+<?php include __DIR__.'/../src/elements/typo/headlines.php'; ?>
 
 </body>
 

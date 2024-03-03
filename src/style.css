@@ -1,27 +1,4 @@
+@import url('./style/_main.css');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-.cpm-headline-1{
-    @apply mb-4 text-5xl font-bold leading-none tracking-tight text-gray-700 md:text-5xl lg:text-6xl
-}
-
-.cpm-headline-2{
-    @apply mb-3 text-4xl font-bold leading-none tracking-tight text-gray-700 md:text-4xl lg:text-5xl
-}
-
-.cpm-headline-3{
-    @apply mb-2 text-3xl font-bold leading-none tracking-tight text-gray-700 md:text-3xl lg:text-4xl
-}
-
-.cpm-headline-4{
-    @apply mb-1 text-2xl font-bold leading-none tracking-tight text-gray-700 md:text-2xl lg:text-3xl
-}
-
-.cpm-headline-5{
-    @apply text-lg font-bold leading-none tracking-tight text-gray-700 md:text-xl lg:text-2xl
-}
-
-.cpm-headline-6{
-    @apply text-lg font-bold
-}
