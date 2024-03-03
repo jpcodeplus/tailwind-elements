@@ -1,0 +1,21 @@
+.headlines {
+  @apply font-bold text-primary-800 subpixel-antialiased;
+}
+.h1 {
+  @apply text-3xl md:text-5xl lg:text-6xl headlines;
+}
+.h2 {
+  @apply text-2xl md:text-4xl lg:text-5xl headlines;
+}
+.h3 {
+  @apply text-xl md:text-3xl lg:text-4xl font-bold headlines;
+}
+.h4 {
+  @apply text-lg md:text-2xl lg:text-3xl font-bold headlines;
+}
+.h5 {
+  @apply text-base md:text-xl lg:text-2xl font-bold headlines;
+}
+.h6 {
+  @apply text-sm md:text-lg lg:text-xl font-bold headlines;
+}
