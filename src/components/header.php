@@ -1,11 +1,11 @@
-<header class="sticky top-0 z-40 bg-white shadow-xl md:shadow">
+<header class="sticky-header">
   <section class="section-wrap">
-    <div class="flex min-h-16 flex-col items-center justify-between md:flex-row">
-      <div class="flex w-full flex-shrink-0 items-center justify-between py-1 md:w-auto md:py-0">
-        <a href="/" class="inline-flex gap-1 text-xl font-medium text-gray-900"> CPM<span class="font-light">Template</span> </a>
+    <div class="sticky-header_wrap">
 
+      <div class="main-brand">
+        <a href="/" class="main-brand_text"> CPM<span class="font-light">Template</span> </a>
         <!-- Mobile menu button -->
-        <button type="button" class="text-primary-400 hover:text-primary-600 my-2 inline-flex h-12 w-12 items-center justify-center self-center rounded-full bg-transparent bg-white shadow md:hidden" id="menuButton">
+        <button type="button" class="main-menu_mobil-button" id="menuButton">
           <span class="sr-only">Menü öffnen</span>
           <!-- Burger-Icon -->
           <svg class="block h-6 w-6" id="menuOpenIcon" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
@@ -17,12 +17,14 @@
           </svg>
         </button>
       </div>
-      <nav id="mobileMenu" class="hidden mb-4 md:flex max-h-screen w-full flex-col overflow-scroll md:m-0 md:w-auto md:flex-row">
+
+      <nav id="mobileMenu" class="main-menu">
         <!-- Navigation Links -->
-        <a href="/doc" class="w-full rounded-md px-3 py-3 text-sm font-medium text-gray-700 hover:bg-gray-100 hover:text-gray-900 md:w-auto">Dokumentation</a>
-        <a href="/elements" class="w-full rounded-md px-3 py-3 text-sm font-medium text-gray-700 hover:bg-gray-100 hover:text-gray-900 md:w-auto">Elemente</a>
-        <a href="/components" class="w-full rounded-md px-3 py-3 text-sm font-medium text-gray-700 hover:bg-gray-100 hover:text-gray-900 md:w-auto">Komponenten</a>
+        <a href="/doc" class="main-menu_link">Dokumentation</a>
+        <a href="/elements" class="main-menu_link">Elemente</a>
+        <a href="/components" class="main-menu_link-active">Komponenten</a>
       </nav>
+
     </div>
   </section>
 </header>

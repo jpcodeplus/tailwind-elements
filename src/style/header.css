@@ -1,18 +1,44 @@
+/* Allgemeine Definitionen für den Sticky-Header */
 .sticky-header {
-  @apply border-primary-300 sticky top-0 z-50 border-b-2 bg-white shadow-lg md:border-none md:shadow-sm;
+  @apply sticky top-0 z-40 bg-white shadow-xl md:shadow;
 }
+
+/* Wrapper für Sektionen, zentral ausgerichtet mit maximalem Screen-Limit */
 .section-wrap {
   @apply mx-auto w-full max-w-screen-xl px-4;
 }
 
-.mobil-menu_link {
-  @apply text-primary hover:bg-primary-100 block rounded-md px-3 py-2 text-base;
+/* Flex-Container für den Sticky-Header, mit Responsive-Anpassungen */
+.sticky-header_wrap {
+  @apply flex min-h-16 flex-col items-center justify-between md:flex-row;
 }
 
+/* Hauptmenü-Styles, verborgen auf mobilen Geräten und flexibel angezeigt auf größeren Bildschirmen */
+.main-menu {
+  @apply mb-4 hidden max-h-screen w-full flex-col overflow-scroll gap-2 md:m-0 md:flex md:w-auto md:flex-row;
+}
+
+/* Button speziell für mobile Ansicht, um das Menü zu öffnen/schließen */
+.main-menu_mobil-button {
+  @apply text-primary  hover:text-primary-700 my-2 inline-flex h-12 w-12 items-center justify-center rounded-full md:hidden;
+}
+
+/* Links im Hauptmenü, mit Hover-Effekten und Responsive-Anpassungen */
 .main-menu_link {
-  @apply text-primary text-sm font-normal hover:underline;
+  @apply text-primary hover:bg-primary-100 hover:text-primary-900 w-full rounded-md p-3 md:px-2 text-sm font-medium md:w-auto;
 }
 
-.logo-text {
-  @apply from-primary to-primary-300 inline-flex gap-1 bg-gradient-to-r bg-clip-text text-lg font-bold tracking-tighter text-transparent lg:text-xl;
+/* Zusätzliche Styles für aktive Links, mit Responsive-Anpassungen */
+.main-menu_link-active {
+  @apply bg-primary-600 hover:bg-primary-700 text-primary-100 w-full rounded-md p-3 md:bg-primary-100 md:hover:bg-primary-200 md:hover:text-primary-800 md:text-primary-600 md:w-auto md:px-2 text-sm font-medium;
+}
+
+/* Container für die Marke/Logo, mit Responsive-Anpassungen */
+.main-brand {
+  @apply flex w-full items-center justify-between py-1 md:w-auto md:py-0;
+}
+
+/* Text-Styles für die Markenbezeichnung, mit Gradient-Effekt */
+.main-brand_text {
+  @apply bg-gradient-to-r from-primary-700 to-primary-300 bg-clip-text text-lg font-bold text-transparent lg:text-xl;
 }
